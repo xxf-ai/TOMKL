@@ -37,18 +37,6 @@ Use `--dataset Tmall` or `--dataset Cosmetics` with the corresponding archive. U
 
 `evaluate` reports full-catalog HR, NDCG, and MRR. `predict` uses the history of an eligible user in the processed test split and ranks the catalog using the model's scores. Pass an eligible user ID from that split. Scores are ranking scores, and item IDs refer to the processed catalog.
 
-## Configurations and checkpoint provenance
-
-The packaged full-model profile uses 500 foundation epochs and 30 TCPSA epochs by default. The verified saved JD and Tmall configurations use TCPSA rank 8. The repository includes a Cosmetics profile built from the recorded full-model configuration. Data and model weights are obtained separately.
-
-The following values separate the paper's main table from recorded evaluation of the available full-model checkpoints. Both columns use HR@5 / NDCG@5 / HR@10 / NDCG@10.
-
-| Dataset | Paper | Saved checkpoint evaluation |
-| --- | --- | --- |
-| JD | 0.2284 / 0.1312 / 0.3515 / 0.1710 | 0.2284 / 0.1312 / 0.3515 / 0.1710 |
-| Tmall | 0.0721 / 0.0438 / 0.1087 / 0.0537 | 0.0721 / 0.0438 / 0.1025 / 0.0537 |
-| Cosmetics | 0.0732 / 0.0423 / 0.1227 / 0.0584 | No matching full checkpoint available for verification |
-
 ## Source layout
 
 - `tomkl/encoder.py` and the expert layers implement the shared encoders.
