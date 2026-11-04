@@ -1,0 +1,11 @@
+TOMKL — Target-Oriented Multi-Behavior Knowledge Learning
+
+The shared encoder design and data protocol build on:
+Xiaoqing Chen, Yawen Luo, Zitao Xu, Weike Pan, and Zhong Ming.
+Behavior-aware Attribute-infused Sequential Encoders for Next-Item Recommendation.
+ACM Transactions on Information Systems, DOI 10.1145/3812542.
+Original implementation: https://github.com/Erin-Gr/BASE
+
+This repository contains the TOMKL project's PyTorch implementation.
+The Apache-2.0 text in LICENSE-TTA4SR applies to portions derived from
+TTA4SR. It does not constitute a license grant for other material.
